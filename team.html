@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>ARSHA - Team</title>
+  </head>
+  <body>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background: linear-gradient(135deg, #2c4776, #4a90e2);">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">
+          <strong>ARSHA</strong>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="album.html">Album</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="team.html">Team</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                More
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a class="dropdown-item" href="return-policy.html">Return Policy</a></li>
+                <li><a class="dropdown-item" href="terms-conditions.html">Terms & Conditions</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          
+          <div class="social-icons d-none d-lg-flex">
+            <a href="#" class="text-decoration-none"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-decoration-none"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-decoration-none"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-decoration-none"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Team</li>
+              </ol>
+            </nav>
+            <h1 class="page-title">Our Team</h1>
+            <p class="lead">Meet the talented professionals behind our success</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-5">
+      <div class="container">
+        <!-- Team Members Grid -->
+        <div class="row g-4 mb-5">
+          <!-- Team Member 1 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card team-card h-100 border-0 shadow-sm">
+              <div class="card-img-wrapper">
+                <img src="images/team-1.jpg" class="card-img-top" alt="Walter White" loading="lazy">
+                <div class="team-overlay">
+                  <div class="social-links">
+                    <a href="#" class="social-link" data-bs-toggle="tooltip" title="Twitter">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" data-bs-toggle="tooltip" title="Facebook">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link" data-bs-toggle="tooltip" title="Instagram">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" data-bs-toggle="tooltip" title="LinkedIn">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-4">
+                <h5 class="card-title mb-1">Walter White</h5>
+                <p class="text-primary fw-bold mb-2">Chief Executive Officer</p>
+                <p class="card-text text-muted small">
+                  Leading our company with vision and dedication to deliver exceptional results for our clients.
+                </p>
+                <button class="btn btn-outline-primary btn-sm" onclick="showMemberDetails('walter')">
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card team-card h-100 border-0 shadow-sm">
+              <div class="card-img-wrapper">
+                <img src="images/team-1.jpg" class="card-img-top" alt="Sarah Johnson" loading="lazy">
+                <div class="team-overlay">
+                  <div class="social-links">
+                    <a href="#" class="social-link" data-bs-toggle="tooltip" title="Twitter">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" data-bs-toggle="tooltip" title="Facebook">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link" data-bs-toggle="tooltip" title="Instagram">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" data-bs-toggle="tooltip" title="LinkedIn">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-4">
+                <h5 class="card-title mb-1">Sarah Johnson</h5>
+                <p class="text-primary fw-bold mb-2">Product Manager</p>
+                <p class="card-text text-muted small">
+                  Driving product strategy and innovation to create solutions that exceed client expectations.
+                </p>
+                <button class="btn btn-outline-primary btn-sm" onclick="showMemberDetails('sarah')">
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card team-card h-100 border-0 shadow-sm">
+              <div class="card-img-wrapper">
+                <img src="images/team-1.jpg" class="card-img-top" alt="William Anderson" loading="lazy">
+                <div class="team-overlay">
+                  <div class="social-links">
+                    <a href="#" class="social-link" data-bs-toggle="tooltip" title="Twitter">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" data-bs-toggle="tooltip" title="Facebook">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link" data-bs-toggle="tooltip" title="Instagram">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" data-bs-toggle="tooltip" title="LinkedIn">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-4">
+                <h5 class="card-title mb-1">William Anderson</h5>
+                <p class="text-primary fw-bold mb-2">Chief Technology Officer</p>
+                <p class="card-text text-muted small">
+                  Leading our technical team with cutting-edge solutions and innovative development practices.
+                </p>
+                <button class="btn btn-outline-primary btn-sm" onclick="showMemberDetails('william')">
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 4 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card team-card h-100 border-0 shadow-sm">
+              <div class="card-img-wrapper">
+                <img src="images/team-1.jpg" class="card-img-top" alt="Amanda Jepson" loading="lazy">
+                <div class="team-overlay">
+                  <div class="social-links">
+                    <a href="#" class="social-link" data-bs-toggle="tooltip" title="Twitter">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" data-bs-toggle="tooltip" title="Facebook">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link" data-bs-toggle="tooltip" title="Instagram">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" data-bs-toggle="tooltip" title="LinkedIn">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-4">
+                <h5 class="card-title mb-1">Amanda Jepson</h5>
+                <p class="text-primary fw-bold mb-2">Financial Controller</p>
+                <p class="card-text text-muted small">
+                  Managing our finances with precision and ensuring sustainable business growth and stability.
+                </p>
+                <button class="btn btn-outline-primary btn-sm" onclick="showMemberDetails('amanda')">
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Stats -->
+        <div class="row mt-5 pt-5 border-top">
+          <div class="col-md-3 col-6 text-center mb-4">
+            <div class="team-stat">
+              <i class="fas fa-users fa-3x text-primary mb-3"></i>
+              <h3 class="display-4 fw-bold text-primary">25+</h3>
+              <p class="text-muted mb-0">Team Members</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 text-center mb-4">
+            <div class="team-stat">
+              <i class="fas fa-award fa-3x text-primary mb-3"></i>
+              <h3 class="display-4 fw-bold text-primary">10+</h3>
+              <p class="text-muted mb-0">Years Experience</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 text-center mb-4">
+            <div class="team-stat">
+              <i class="fas fa-graduation-cap fa-3x text-primary mb-3"></i>
+              <h3 class="display-4 fw-bold text-primary">50+</h3>
+              <p class="text-muted mb-0">Certifications</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 text-center mb-4">
+            <div class="team-stat">
+              <i class="fas fa-trophy fa-3x text-primary mb-3"></i>
+              <h3 class="display-4 fw-bold text-primary">15+</h3>
+              <p class="text-muted mb-0">Awards Won</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Join Our Team -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="card bg-primary text-white">
+              <div class="card-body text-center p-5">
+                <h2 class="card-title">Join Our Amazing Team!</h2>
+                <p class="card-text mb-4">
+                  We're always looking for talented individuals to join our growing team. 
+                  If you're passionate about technology and innovation, we'd love to hear from you.
+                </p>
+                <a href="contact.html" class="btn btn-light btn-lg">
+                  <i class="fas fa-paper-plane me-2"></i>View Open Positions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer bg-dark text-light py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Company Info -->
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-section">
+              <h5 class="footer-title mb-4">
+                <strong>ARSHA</strong>
+              </h5>
+              <p class="footer-text mb-4">
+                Creating exceptional digital experiences with innovative solutions and cutting-edge technology.
+              </p>
+              <div class="footer-social">
+                <a href="#" class="social-link me-3" data-bs-toggle="tooltip" title="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link me-3" data-bs-toggle="tooltip" title="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link me-3" data-bs-toggle="tooltip" title="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link me-3" data-bs-toggle="tooltip" title="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-section">
+              <h6 class="footer-subtitle mb-4">Quick Links</h6>
+              <ul class="footer-links list-unstyled">
+                <li><a href="home.html" class="footer-link">Home</a></li>
+                <li><a href="about.html" class="footer-link">About Us</a></li>
+                <li><a href="services.html" class="footer-link">Services</a></li>
+                <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+                <li><a href="album.html" class="footer-link">Album</a></li>
+                <li><a href="team.html" class="footer-link">Team</a></li>
+                <li><a href="contact.html" class="footer-link">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-section">
+              <h6 class="footer-subtitle mb-4">Our Services</h6>
+              <ul class="footer-links list-unstyled">
+                <li><a href="#" class="footer-link">Web Development</a></li>
+                <li><a href="#" class="footer-link">Mobile Apps</a></li>
+                <li><a href="#" class="footer-link">UI/UX Design</a></li>
+                <li><a href="#" class="footer-link">Digital Marketing</a></li>
+                <li><a href="#" class="footer-link">Consulting</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-section">
+              <h6 class="footer-subtitle mb-4">Contact Info</h6>
+              <div class="contact-info">
+                <div class="contact-item mb-3">
+                  <i class="fas fa-map-marker-alt contact-icon"></i>
+                  <span class="contact-text">A108 Adam Street, New York, NY 535022</span>
+                </div>
+                <div class="contact-item mb-3">
+                  <i class="fas fa-phone contact-icon"></i>
+                  <a href="tel:+15589554855" class="contact-text footer-link">+1 5589 55488 55</a>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-envelope contact-icon"></i>
+                  <a href="mailto:info@arsha.com" class="contact-text footer-link">info@arsha.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-lg-3 col-md-12">
+            <div class="footer-section">
+              <h6 class="footer-subtitle mb-4">Stay Updated</h6>
+              <p class="footer-text mb-4">Subscribe to our newsletter for the latest updates and offers.</p>
+              <form class="newsletter-form">
+                <div class="input-group mb-3">
+                  <input type="email" class="form-control newsletter-input" placeholder="Enter your email" 
+                         aria-label="Email address" required>
+                  <button class="btn btn-primary newsletter-btn" type="submit">
+                    <i class="fas fa-paper-plane"></i>
+                  </button>
+                </div>
+              </form>
+              <div class="footer-badges mt-4">
+                <span class="badge bg-success me-2 mb-2">
+                  <i class="fas fa-shield-alt me-1"></i>SSL Secured
+                </span>
+                <span class="badge bg-info mb-2">
+                  <i class="fas fa-user-shield me-1"></i>GDPR Compliant
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <hr class="footer-divider my-4">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="footer-copyright mb-0">
+              &copy; 2025 <strong>ARSHA</strong>. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <ul class="footer-legal list-inline text-md-end mb-0 mt-2 mt-md-0">
+              <li class="list-inline-item">
+                <a href="privacy-policy.html" class="footer-link small">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="return-policy.html" class="footer-link small">Return Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="terms-conditions.html" class="footer-link small">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button type="button" class="btn btn-primary btn-floating position-fixed" 
+            id="btn-back-to-top" style="bottom: 20px; right: 20px; display: none; z-index: 1000;">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Team Member Detail Modal -->
+    <div class="modal fade" id="memberModal" tabindex="-1" aria-labelledby="memberModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="memberModalLabel">Team Member Profile</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="memberModalContent">
+              <!-- Dynamic content will be loaded here -->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Connect on LinkedIn</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Initialize tooltips
+      document.addEventListener('DOMContentLoaded', function() {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+      });
+
+      // Team member details functionality
+      function showMemberDetails(memberId) {
+        const memberData = {
+          walter: {
+            name: 'Walter White',
+            position: 'Chief Executive Officer',
+            image: 'images/team-1.jpg',
+            bio: 'Walter is a visionary leader with over 15 years of experience in the technology industry. He founded ARSHA with the mission to deliver exceptional digital solutions.',
+            education: 'MBA in Business Administration, Harvard Business School',
+            experience: '15+ years in Technology Leadership',
+            skills: ['Strategic Planning', 'Team Leadership', 'Business Development', 'Innovation Management'],
+            achievements: ['Founded ARSHA in 2015', 'Led company to 300% growth', 'Industry Speaker at major conferences']
+          },
+          sarah: {
+            name: 'Sarah Johnson',
+            position: 'Product Manager',
+            image: 'images/team-1.jpg',
+            bio: 'Sarah leads our product strategy and development. She has a keen eye for user experience and market trends.',
+            education: 'MS in Product Management, Stanford University',
+            experience: '10+ years in Product Management',
+            skills: ['Product Strategy', 'User Research', 'Agile Methodology', 'Data Analysis'],
+            achievements: ['Launched 20+ successful products', 'Increased user satisfaction by 40%', 'Led cross-functional teams']
+          },
+          william: {
+            name: 'William Anderson',
+            position: 'Chief Technology Officer',
+            image: 'images/team-1.jpg',
+            bio: 'William oversees our technical architecture and development processes. He is passionate about cutting-edge technologies.',
+            education: 'PhD in Computer Science, MIT',
+            experience: '12+ years in Software Development',
+            skills: ['Software Architecture', 'Cloud Computing', 'DevOps', 'Team Management'],
+            achievements: ['Built scalable systems for millions of users', 'Published 15+ technical papers', 'Open source contributor']
+          },
+          amanda: {
+            name: 'Amanda Jepson',
+            position: 'Financial Controller',
+            image: 'images/team-1.jpg',
+            bio: 'Amanda manages our financial operations and ensures sustainable business growth with precise financial planning.',
+            education: 'CPA, Masters in Accounting',
+            experience: '8+ years in Financial Management',
+            skills: ['Financial Planning', 'Budget Management', 'Risk Assessment', 'Compliance'],
+            achievements: ['Optimized company finances by 25%', 'Implemented cost-saving measures', 'Streamlined financial processes']
+          }
+        };
+
+        const data = memberData[memberId];
+        if (data) {
+          const modalContent = document.getElementById('memberModalContent');
+          modalContent.innerHTML = `
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <img src="${data.image}" alt="${data.name}" class="img-fluid rounded-circle mb-3" style="width: 200px; height: 200px; object-fit: cover;">
+                <h4>${data.name}</h4>
+                <p class="text-primary fw-bold">${data.position}</p>
+              </div>
+              <div class="col-md-8">
+                <h6>About</h6>
+                <p class="text-muted">${data.bio}</p>
+                
+                <h6>Education</h6>
+                <p class="text-muted">${data.education}</p>
+                
+                <h6>Experience</h6>
+                <p class="text-muted">${data.experience}</p>
+                
+                <h6>Core Skills</h6>
+                <div class="mb-3">
+                  ${data.skills.map(skill => `<span class="badge bg-primary me-1 mb-1">${skill}</span>`).join('')}
+                </div>
+                
+                <h6>Key Achievements</h6>
+                <ul class="text-muted">
+                  ${data.achievements.map(achievement => `<li>${achievement}</li>`).join('')}
+                </ul>
+              </div>
+            </div>
+          `;
+          
+          document.getElementById('memberModalLabel').textContent = `${data.name} - Profile`;
+          const modal = new bootstrap.Modal(document.getElementById('memberModal'));
+          modal.show();
+        }
+      }
+
+      // Enhanced footer functionality
+      function subscribeNewsletter() {
+        const email = document.getElementById('newsletter-email').value.trim();
+        if (email && isValidEmail(email)) {
+          // Simulate newsletter subscription
+          showNotification('Thank you for subscribing to our newsletter!', 'success');
+          document.getElementById('newsletter-email').value = '';
+        } else {
+          showNotification('Please enter a valid email address.', 'error');
+        }
+      }
+
+      function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+
+      function showNotification(message, type) {
+        // Create notification element
+        const notification = document.createElement('div');
+        notification.className = `alert alert-${type === 'success' ? 'success' : 'danger'} position-fixed`;
+        notification.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+        notification.innerHTML = `
+          ${message}
+          <button type="button" class="btn-close" onclick="this.parentElement.remove()"></button>
+        `;
+        document.body.appendChild(notification);
+        
+        // Auto remove after 3 seconds
+        setTimeout(() => {
+          if (notification.parentElement) {
+            notification.remove();
+          }
+        }, 3000);
+      }
+
+      // Back to top button functionality
+      window.addEventListener('scroll', function() {
+        const backToTop = document.getElementById('back-to-top');
+        if (window.pageYOffset > 100) {
+          backToTop.style.display = 'block';
+        } else {
+          backToTop.style.display = 'none';
+        }
+      });
+
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+
+      // Initialize tooltips
+      document.addEventListener('DOMContentLoaded', function() {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+      });
+    </script>
+  </body>
+</html>

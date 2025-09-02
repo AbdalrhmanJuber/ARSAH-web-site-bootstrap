@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>ARSHA - Portfolio</title>
+  </head>
+  <body>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background: linear-gradient(135deg, #2c4776, #4a90e2);">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">
+          <strong>ARSHA</strong>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="album.html">Album</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                More
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a class="dropdown-item" href="return-policy.html">Return Policy</a></li>
+                <li><a class="dropdown-item" href="terms-conditions.html">Terms & Conditions</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          
+          <div class="social-icons d-none d-lg-flex">
+            <a href="#" class="text-decoration-none"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-decoration-none"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-decoration-none"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-decoration-none"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Portfolio</li>
+              </ol>
+            </nav>
+            <h1 class="page-title">Our Portfolio</h1>
+            <p class="lead">Discover our amazing work and successful projects that showcase our expertise and creativity</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-5">
+      <div class="container">
+        <!-- Portfolio Filter -->
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="d-flex justify-content-center flex-wrap gap-2">
+              <button class="btn btn-outline-primary active" data-filter="all">
+                <i class="fas fa-th-large me-2"></i>All Projects
+              </button>
+              <button class="btn btn-outline-primary" data-filter="web">
+                <i class="fas fa-code me-2"></i>Web Development
+              </button>
+              <button class="btn btn-outline-primary" data-filter="mobile">
+                <i class="fas fa-mobile-alt me-2"></i>Mobile Apps
+              </button>
+              <button class="btn btn-outline-primary" data-filter="design">
+                <i class="fas fa-paint-brush me-2"></i>Design
+              </button>
+              <button class="btn btn-outline-primary" data-filter="branding">
+                <i class="fas fa-bullhorn me-2"></i>Branding
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="row g-4" id="portfolioGrid">
+          <!-- Project 1 -->
+          <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+            <div class="card portfolio-card h-100">
+              <div class="position-relative overflow-hidden">
+                <img src="images/portfolio-1.webp" class="card-img-top" alt="E-commerce Platform" loading="lazy">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-actions">
+                    <button class="btn btn-primary btn-sm me-2" onclick="showProjectDetails('project1')"
+                            data-bs-toggle="tooltip" title="View Details">
+                      <i class="fas fa-info"></i>
+                    </button>
+                    <a href="images/portfolio-1.webp" class="btn btn-primary btn-sm me-2" target="_blank"
+                       data-bs-toggle="tooltip" title="View Full Image">
+                      <i class="fas fa-search-plus"></i>
+                    </a>
+                    <button class="btn btn-primary btn-sm" onclick="openProjectModal('project1')"
+                            data-bs-toggle="tooltip" title="Quick Preview">
+                      <i class="fas fa-eye"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">E-commerce Platform</h5>
+                <p class="card-text">Modern online shopping platform with advanced features and seamless user experience.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">
+                    <i class="fas fa-code me-1"></i>Web Development
+                  </small>
+                  <div class="project-tech">
+                    <span class="badge bg-primary me-1">React</span>
+                    <span class="badge bg-secondary">Node.js</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-lg-4 col-md-6 portfolio-item" data-category="mobile">
+            <div class="card portfolio-card h-100">
+              <div class="position-relative overflow-hidden">
+                <img src="images/portfolio-3.webp" class="card-img-top" alt="Mobile Banking App" loading="lazy">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-actions">
+                    <button class="btn btn-primary btn-sm me-2" onclick="showProjectDetails('project2')"
+                            data-bs-toggle="tooltip" title="View Details">
+                      <i class="fas fa-info"></i>
+                    </button>
+                    <a href="images/portfolio-3.webp" class="btn btn-primary btn-sm me-2" target="_blank"
+                       data-bs-toggle="tooltip" title="View Full Image">
+                      <i class="fas fa-search-plus"></i>
+                    </a>
+                    <button class="btn btn-primary btn-sm" onclick="openProjectModal('project2')"
+                            data-bs-toggle="tooltip" title="Quick Preview">
+                      <i class="fas fa-eye"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Mobile Banking App</h5>
+                <p class="card-text">Secure and intuitive mobile banking application with advanced financial features.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">
+                    <i class="fas fa-mobile-alt me-1"></i>Mobile Apps
+                  </small>
+                  <div class="project-tech">
+                    <span class="badge bg-success me-1">Flutter</span>
+                    <span class="badge bg-info">Firebase</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-lg-4 col-md-6 portfolio-item" data-category="design">
+            <div class="card portfolio-card h-100">
+              <div class="position-relative overflow-hidden">
+                <img src="images/portfolio-4.webp" class="card-img-top" alt="Brand Identity Design" loading="lazy">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-actions">
+                    <button class="btn btn-primary btn-sm me-2" onclick="showProjectDetails('project3')"
+                            data-bs-toggle="tooltip" title="View Details">
+                      <i class="fas fa-info"></i>
+                    </button>
+                    <a href="images/portfolio-4.webp" class="btn btn-primary btn-sm me-2" target="_blank"
+                       data-bs-toggle="tooltip" title="View Full Image">
+                      <i class="fas fa-search-plus"></i>
+                    </a>
+                    <button class="btn btn-primary btn-sm" onclick="openProjectModal('project3')"
+                            data-bs-toggle="tooltip" title="Quick Preview">
+                      <i class="fas fa-eye"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Brand Identity Design</h5>
+                <p class="card-text">Complete brand identity package including logo, colors, and visual guidelines.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">
+                    <i class="fas fa-paint-brush me-1"></i>Design
+                  </small>
+                  <div class="project-tech">
+                    <span class="badge bg-warning me-1">Photoshop</span>
+                    <span class="badge bg-danger">Illustrator</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+            <div class="card portfolio-card h-100">
+              <div class="position-relative overflow-hidden">
+                <img src="images/portfolio-7.webp" class="card-img-top" alt="Corporate Website" loading="lazy">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-actions">
+                    <button class="btn btn-primary btn-sm me-2" onclick="showProjectDetails('project4')"
+                            data-bs-toggle="tooltip" title="View Details">
+                      <i class="fas fa-info"></i>
+                    </button>
+                    <a href="images/portfolio-7.webp" class="btn btn-primary btn-sm me-2" target="_blank"
+                       data-bs-toggle="tooltip" title="View Full Image">
+                      <i class="fas fa-search-plus"></i>
+                    </a>
+                    <button class="btn btn-primary btn-sm" onclick="openProjectModal('project4')"
+                            data-bs-toggle="tooltip" title="Quick Preview">
+                      <i class="fas fa-eye"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Corporate Website</h5>
+                <p class="card-text">Professional corporate website with modern design and optimized performance.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">
+                    <i class="fas fa-code me-1"></i>Web Development
+                  </small>
+                  <div class="project-tech">
+                    <span class="badge bg-primary me-1">Bootstrap</span>
+                    <span class="badge bg-secondary">jQuery</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="col-lg-4 col-md-6 portfolio-item" data-category="branding">
+            <div class="card portfolio-card h-100">
+              <div class="position-relative overflow-hidden">
+                <img src="images/portfolio-8.webp" class="card-img-top" alt="Marketing Campaign" loading="lazy">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-actions">
+                    <button class="btn btn-primary btn-sm me-2" onclick="showProjectDetails('project5')"
+                            data-bs-toggle="tooltip" title="View Details">
+                      <i class="fas fa-info"></i>
+                    </button>
+                    <a href="images/portfolio-8.webp" class="btn btn-primary btn-sm me-2" target="_blank"
+                       data-bs-toggle="tooltip" title="View Full Image">
+                      <i class="fas fa-search-plus"></i>
+                    </a>
+                    <button class="btn btn-primary btn-sm" onclick="openProjectModal('project5')"
+                            data-bs-toggle="tooltip" title="Quick Preview">
+                      <i class="fas fa-eye"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Marketing Campaign</h5>
+                <p class="card-text">Comprehensive digital marketing campaign with engaging visuals and content.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">
+                    <i class="fas fa-bullhorn me-1"></i>Branding
+                  </small>
+                  <div class="project-tech">
+                    <span class="badge bg-success me-1">Creative</span>
+                    <span class="badge bg-info">Strategy</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="col-lg-4 col-md-6 portfolio-item" data-category="design">
+            <div class="card portfolio-card h-100">
+              <div class="position-relative overflow-hidden">
+                <img src="images/portfolio-9.webp" class="card-img-top" alt="UI/UX Design" loading="lazy">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-actions">
+                    <button class="btn btn-primary btn-sm me-2" onclick="showProjectDetails('project6')"
+                            data-bs-toggle="tooltip" title="View Details">
+                      <i class="fas fa-info"></i>
+                    </button>
+                    <a href="images/portfolio-9.webp" class="btn btn-primary btn-sm me-2" target="_blank"
+                       data-bs-toggle="tooltip" title="View Full Image">
+                      <i class="fas fa-search-plus"></i>
+                    </a>
+                    <button class="btn btn-primary btn-sm" onclick="openProjectModal('project6')"
+                            data-bs-toggle="tooltip" title="Quick Preview">
+                      <i class="fas fa-eye"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">UI/UX Design</h5>
+                <p class="card-text">User-centered design approach creating intuitive and engaging digital experiences.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">
+                    <i class="fas fa-paint-brush me-1"></i>Design
+                  </small>
+                  <div class="project-tech">
+                    <span class="badge bg-primary me-1">Figma</span>
+                    <span class="badge bg-secondary">Sketch</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <button class="btn btn-outline-primary btn-lg" id="loadMoreProjects">
+              <i class="fas fa-plus me-2"></i>View More Projects
+            </button>
+          </div>
+        </div>
+
+        <!-- Portfolio Statistics -->
+        <div class="row mt-5 pt-5 border-top">
+          <div class="col-md-3 col-6 text-center mb-4">
+            <div class="portfolio-stat">
+              <h3 class="display-4 fw-bold text-primary">150+</h3>
+              <p class="text-muted mb-0">Projects Completed</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 text-center mb-4">
+            <div class="portfolio-stat">
+              <h3 class="display-4 fw-bold text-primary">98%</h3>
+              <p class="text-muted mb-0">Client Satisfaction</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 text-center mb-4">
+            <div class="portfolio-stat">
+              <h3 class="display-4 fw-bold text-primary">50+</h3>
+              <p class="text-muted mb-0">Happy Clients</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 text-center mb-4">
+            <div class="portfolio-stat">
+              <h3 class="display-4 fw-bold text-primary">5</h3>
+              <p class="text-muted mb-0">Years Experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer bg-dark text-light py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Company Info -->
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-section">
+              <h5 class="footer-title mb-4">
+                <strong>ARSHA</strong>
+              </h5>
+              <p class="footer-text mb-4">
+                Creating exceptional digital experiences with innovative solutions and cutting-edge technology.
+              </p>
+              <div class="footer-social">
+                <a href="#" class="social-link me-3" data-bs-toggle="tooltip" title="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link me-3" data-bs-toggle="tooltip" title="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link me-3" data-bs-toggle="tooltip" title="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link me-3" data-bs-toggle="tooltip" title="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-section">
+              <h6 class="footer-subtitle mb-4">Quick Links</h6>
+              <ul class="footer-links list-unstyled">
+                <li><a href="home.html" class="footer-link">Home</a></li>
+                <li><a href="about.html" class="footer-link">About Us</a></li>
+                <li><a href="services.html" class="footer-link">Services</a></li>
+                <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+                <li><a href="album.html" class="footer-link">Album</a></li>
+                <li><a href="team.html" class="footer-link">Team</a></li>
+                <li><a href="contact.html" class="footer-link">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-section">
+              <h6 class="footer-subtitle mb-4">Our Services</h6>
+              <ul class="footer-links list-unstyled">
+                <li><a href="#" class="footer-link">Web Development</a></li>
+                <li><a href="#" class="footer-link">Mobile Apps</a></li>
+                <li><a href="#" class="footer-link">UI/UX Design</a></li>
+                <li><a href="#" class="footer-link">Digital Marketing</a></li>
+                <li><a href="#" class="footer-link">Consulting</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-section">
+              <h6 class="footer-subtitle mb-4">Contact Info</h6>
+              <div class="contact-info">
+                <div class="contact-item mb-3">
+                  <i class="fas fa-map-marker-alt contact-icon"></i>
+                  <span class="contact-text">A108 Adam Street, New York, NY 535022</span>
+                </div>
+                <div class="contact-item mb-3">
+                  <i class="fas fa-phone contact-icon"></i>
+                  <a href="tel:+15589554855" class="contact-text footer-link">+1 5589 55488 55</a>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-envelope contact-icon"></i>
+                  <a href="mailto:info@arsha.com" class="contact-text footer-link">info@arsha.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-lg-3 col-md-12">
+            <div class="footer-section">
+              <h6 class="footer-subtitle mb-4">Stay Updated</h6>
+              <p class="footer-text mb-4">Subscribe to our newsletter for the latest updates and offers.</p>
+              <form class="newsletter-form">
+                <div class="input-group mb-3">
+                  <input type="email" class="form-control newsletter-input" placeholder="Enter your email" 
+                         aria-label="Email address" required>
+                  <button class="btn btn-primary newsletter-btn" type="submit">
+                    <i class="fas fa-paper-plane"></i>
+                  </button>
+                </div>
+              </form>
+              <div class="footer-badges mt-4">
+                <span class="badge bg-success me-2 mb-2">
+                  <i class="fas fa-shield-alt me-1"></i>SSL Secured
+                </span>
+                <span class="badge bg-info mb-2">
+                  <i class="fas fa-user-shield me-1"></i>GDPR Compliant
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <hr class="footer-divider my-4">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="footer-copyright mb-0">
+              &copy; 2025 <strong>ARSHA</strong>. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <ul class="footer-legal list-inline text-md-end mb-0 mt-2 mt-md-0">
+              <li class="list-inline-item">
+                <a href="privacy-policy.html" class="footer-link small">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="return-policy.html" class="footer-link small">Return Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="terms-conditions.html" class="footer-link small">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button type="button" class="btn btn-primary btn-floating position-fixed" 
+            id="btn-back-to-top" style="bottom: 20px; right: 20px; display: none; z-index: 1000;">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Project Detail Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="projectModalContent">
+              <!-- Dynamic content will be loaded here -->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">View Full Project</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Initialize tooltips
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+      
+      // Back to top functionality
+      const backToTopButton = document.getElementById('btn-back-to-top');
+      
+      window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      };
+      
+      backToTopButton.addEventListener('click', function() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      });
+
+      // Newsletter form submission
+      document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = this.querySelector('input[type="email"]').value;
+        
+        // Simple validation
+        if (email) {
+          // Show success message (you can implement actual subscription logic here)
+          const btn = this.querySelector('button');
+          const originalIcon = btn.innerHTML;
+          btn.innerHTML = '<i class="fas fa-check"></i>';
+          btn.classList.remove('btn-primary');
+          btn.classList.add('btn-success');
+          
+          setTimeout(() => {
+            btn.innerHTML = originalIcon;
+            btn.classList.remove('btn-success');
+            btn.classList.add('btn-primary');
+            this.querySelector('input[type="email"]').value = '';
+          }, 2000);
+        }
+      });
+
+      // Portfolio functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+      });
+
+      // Portfolio filtering functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const filterBtns = document.querySelectorAll('[data-filter]');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterBtns.forEach(b => b.classList.remove('active'));
+            // Add active class to clicked button
+            btn.classList.add('active');
+
+            const filterValue = btn.getAttribute('data-filter');
+
+            portfolioItems.forEach(item => {
+              if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                item.style.display = 'block';
+                item.classList.add('animate__fadeIn');
+              } else {
+                item.style.display = 'none';
+              }
+            });
+          });
+        });
+      });
+
+      // Project modal functionality
+      function openProjectModal(projectId) {
+        const projectData = {
+          project1: {
+            title: 'E-commerce Platform',
+            description: 'A comprehensive online shopping platform built with modern web technologies.',
+            image: 'images/portfolio-1.webp',
+            tech: ['React', 'Node.js', 'MongoDB', 'Stripe API'],
+            client: 'RetailCorp Inc.',
+            duration: '3 months',
+            features: ['User Authentication', 'Product Catalog', 'Shopping Cart', 'Payment Integration', 'Order Management']
+          },
+          project2: {
+            title: 'Mobile Banking App',
+            description: 'Secure mobile banking application with biometric authentication and real-time transactions.',
+            image: 'images/portfolio-3.webp',
+            tech: ['Flutter', 'Firebase', 'Biometric Auth', 'Push Notifications'],
+            client: 'SecureBank Ltd.',
+            duration: '4 months',
+            features: ['Account Management', 'Transfer Funds', 'Bill Payments', 'Transaction History', 'Budget Tracking']
+          }
+          // Add more project data as needed
+        };
+
+        const data = projectData[projectId];
+        if (data) {
+          const modalContent = document.getElementById('projectModalContent');
+          modalContent.innerHTML = `
+            <div class="row">
+              <div class="col-md-6">
+                <img src="${data.image}" alt="${data.title}" class="img-fluid rounded">
+              </div>
+              <div class="col-md-6">
+                <h4>${data.title}</h4>
+                <p class="text-muted">${data.description}</p>
+                <hr>
+                <div class="mb-3">
+                  <strong>Client:</strong> ${data.client}
+                </div>
+                <div class="mb-3">
+                  <strong>Duration:</strong> ${data.duration}
+                </div>
+                <div class="mb-3">
+                  <strong>Technologies:</strong><br>
+                  ${data.tech.map(tech => `<span class="badge bg-primary me-1">${tech}</span>`).join('')}
+                </div>
+                <div class="mb-3">
+                  <strong>Key Features:</strong>
+                  <ul class="mt-2">
+                    ${data.features.map(feature => `<li>${feature}</li>`).join('')}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          `;
+          
+          const modal = new bootstrap.Modal(document.getElementById('projectModal'));
+          modal.show();
+        }
+      }
+
+      // Show project details (placeholder function)
+      function showProjectDetails(projectId) {
+        openProjectModal(projectId);
+      }
+
+      // Load more projects functionality
+      document.getElementById('loadMoreProjects').addEventListener('click', function() {
+        this.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Loading More Projects...';
+        
+        // Simulate loading delay
+        setTimeout(() => {
+          this.innerHTML = '<i class="fas fa-check me-2"></i>All Projects Loaded';
+          this.disabled = true;
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>
