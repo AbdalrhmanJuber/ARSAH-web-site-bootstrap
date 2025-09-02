@@ -12,9 +12,6 @@ A professional, responsive business website built with Bootstrap 5, featuring a 
 - **Fast Loading** - Optimized images and efficient code structure
 - **Cross-browser Compatible** - Works on all modern browsers
 
-## 🚀 Live Demo
-
-Visit the live website: [ARSHA Website](your-domain.com) *(Replace with your actual domain)*
 
 ## 📋 Pages Included
 
@@ -183,37 +180,7 @@ Primary colors are defined in CSS custom properties:
 - **Clean URLs** - SEO-friendly file naming convention
 - **Fast Loading** - Optimized images and minified CSS/JS
 
-## 🚀 Deployment
 
-### GitHub Pages
-1. Push your code to GitHub
-2. Go to repository Settings > Pages
-3. Select source branch (usually `main` or `master`)
-4. Your site will be available at `https://yourusername.github.io/ARSAH-web-site`
-
-### Other Hosting Options
-- **Netlify**: Drag and drop deployment
-- **Vercel**: Git integration with automatic deployments
-- **Traditional Hosting**: Upload files via FTP to your web server
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 👨‍💻 Author
-
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
 
 ## 🙏 Acknowledgments
 
